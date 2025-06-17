@@ -1,0 +1,46 @@
+---
+import Main from '../layouts/main.astro';
+
+import { slide } from 'astro:transitions';
+---
+
+<Main>
+  <section id="rules">
+  
+
+    <div class="flex flex-col md:flex-row pt-5 mt-3">
+      <!-- heading on bottom of div -->
+      <div class="w-full relative min-h-full">
+        <div class="md:absolute bottom-0">
+        <h1 class="justify-end text-4xl mb-4">Rules and Regulations</h1>
+      </div>
+      </div>
+      <!-- <div class="w-1/2">
+        <img  src={eligibility.src} alt="WELCOM TO SYNFIG STUDIO HACKATHON" decoding="async" 
+        transition:animate={slide({ duration: '0.6s', delay: '1s' , direction: 'backward'})} />
+      </div> -->
+    </div>
+    
+    <!-- conten -->
+    <div class="mt-4">
+      <div class="pt-4 leading-normal sm:leading-loose">
+      
+        <div class="text-justify md:text-xl text-sm playfair-display-normal"><ul style="list-style:disc;">
+            <!-- <li class="mb-2">The decision of the review committee and organizers in declaring the results will be final. No queries in this regard will be entertained.</li> -->
+            <li class="mb-2">The same person can not participate in more than one team.</li>
+            <li class="mb-2">If a person is found participating in more than one team, both teams will be disqualified from the Hackathon.</li>
+            <li class="mb-2">Use ONLY Synfig Studio for creating animations. Create the supporting graphics, audio, etc. using only open source software. You are not allowed to use any proprietary software in your animation in any aspect. If found, you or your team will be disqualified.</li>
+            <li class="mb-2">You can choose to narrate in <span class="text-3xl text-purple-700">English</span> or in the <span class="text-3xl text-purple-700">22 scheduled Indian languages</span> given below.<br><span class="text-lg">(1) Assamese, (2) Bengali, (3) Gujarati, (4) Hindi, (5) Kannada, (6) Kashmiri, (7) Konkani, (8) Malayalam, (9) Manipuri, (10) Marathi, (11) Nepali, (12) Oriya, (13) Punjabi, (14) Sanskrit, (15) Sindhi, (16) Tamil, (17) Telugu, (18) Urdu (19) Bodo, (20) Santhali, (21) Maithili and (22) Dogri.</span></li>
+            <li class="mb-2">The team lead will be the only point of contact with the organizers. Any participant found to be indulging in any form of malpractice will be immediately disqualified.</li>
+            <li class="mb-2">The decision of the review committee and organizers in declaring the results will be final. No queries in this regard will be entertained.
+            </li>
+            <li class="mb-2">The accepted submissions shall be released and published under open source license in the public domain. The copyright should be transferpurple to the FOSSEE project.</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+</section>
+</Main>
+
+
+

@@ -1,0 +1,45 @@
+---
+import Main from '../layouts/main.astro';
+import resources from '../images/resources.png';
+import { slide } from 'astro:transitions';
+---
+
+<Main>
+  
+  <section id="about">
+  
+
+    <div class="flex flex-col md:flex-row pt-3 mt-3">
+      <!-- heading on bottom of div -->
+      <div class="w-full md:w-1/2 relative min-h-full">
+        <div class="md:absolute bottom-0">
+        <h1 class="justify-end text-4xl mb-4">Some Helpful Resources for Hackathon:</h1>
+      </div>
+      </div>
+      <div class="w-1/2">
+        <img  src={resources.src} alt="Resources list" decoding="async" width="50%"
+        transition:animate={slide({ duration: '0.6s'})} />
+      </div>
+    </div>
+    
+    <!-- conten -->
+    <div class="mt-4">
+      <div class="pt-4 leading-normal sm:leading-loose">
+      
+        <div class="text-justify md:text-xl text-sm playfair-display-normal mb-5 pb-5">
+          <ul style="list-style:disc;" >
+          <li>To download Synfig Studio version 1.4.4:
+            <a href="https://static.fossee.in/focal/Synfig%20Studio%20version%201.4.4/" target="_blank" class="hover:text-purple-400 text-purple-700">click here</a></li>
+          <li class="mb-2">Self-learn Synfig Studio using <span class="hover:text-purple-400 text-purple-700"><a href="https://spoken-tutorial.org/tutorial-search/?search_foss=Synfig&search_language=" target="_blank">Spoken Tutorials</a></span>. These tutorials are available in English, Hindi, Kannada, Marathi, Malayalam, Tamil, and Telugu.</li>
+          <li class="mb-2">For creating graphics, recording audio, etc., you can use other software. However, since there is a requirement to strictly use Open Source Software in this hackathon, you can use GIMP, Audacity, Inkscape, Openshot Video Editor, etc. You can self-learn these software using the Spoken Tutorials, which are freely available in English, Hindi, Kannada, Marathi, Malayalam, Tamil and Telugu.</li>
+          <!-- <li class="mb-2">For help in installing Synfig Studio, please <a href="https://www.synfig.org/" target="_blank" class="hover:text-purple-400 text-purple-700">click here</a>.</li> -->
+          <li class="mb-2">For writing your script, you can learn about storytelling using <a href="https://spoken-tutorial.org/tutorial-search/?search_foss=Communication+Series&search_language=English" target="_blank" class="hover:text-purple-400 text-purple-700">Communication Spoken Tutorials</a> available in English.</li>
+          <li class="mb-2">Refer graphics from our <a href="https://focal.fossee.in/" target="_blank" class="hover:text-purple-400 text-purple-700">FOCAL (free and open source creative art library)</a></span> repository.</li>
+          <li class="mb-2"><div>Self-learn video editing using Blender. These tutorials are available in English - <a class="hover:text-purple-400 text-purple-700" href="https://spoken-tutorial.org/tutorial-search/?search_foss=Video+Editing+using+Blender&amp;search_language=English" target="_blank">click here</a></div></li>
+          <li class="mb-2"><p>Download Blender by visiting the following link - <a class="hover:text-purple-400 text-purple-700" target="_blank" href="https://www.blender.org/download/">blender</a></p></li>
+        </ul>
+          </div>
+      </div>
+    </div>
+</section>
+</Main>

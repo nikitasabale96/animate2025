@@ -1,0 +1,11 @@
+[
+ 
+  { "label": "About", "href": "/about" },
+  { "label": "Theme", "href": "/theme" },
+  {"label": "Awards", "href": "/awards"},
+  { "label": "Resources", "href": "/resources" },
+  { "label": "Rules", "href": "/rules" },
+  { "label": "Partners", "href": "/partners" },
+  { "label": "Contact", "href": "/contact" },
+  {"label": "FAQs", "href": "/contact#faq"}
+]

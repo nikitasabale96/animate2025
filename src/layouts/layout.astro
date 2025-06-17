@@ -1,0 +1,299 @@
+---
+import navLinks from "./nav-links.json";
+import regi from '../images/butn-03.png';
+import { slide } from 'astro:transitions';
+import theme from '../images/btn-02-a.png';
+import guide from '../images/btn-03-a.png';
+import result from '../images/btn-04-a.png';
+import logo from '../images/animate-25-logo(1).png';
+import fos from '../images/fossee-logo.png';
+import iit from '../images/IITB-logo.png';
+---
+
+
+
+<div class="relative">
+  <!-- <div id="lightbox" aria-label="lightbox" tab-index="0" role="button"
+    class="z-20 top-0 left-0 w-screen h-screen bg-custom-background opacity-80"
+  >
+  </div> -->
+  <div class="max-w-8xl mx-auto px-0 sm:px-0 md:px-0">
+    <div
+      id="sidebar"
+      class="lg:block hidden fixed z-30 inset-0 transition-all duration-300 w-[25rem] py-4 px-0 justify-center pt-4"
+      style="background:#7836b4ff;"
+    
+    >
+     
+      
+      <!-- style="background: linear-gradient(180deg, rgb(255, 30, 30) 0%, rgb(216, 7, 38) 65%, rgb(255, 59, 108) 100%)""bg-gradient-to-bl from-rose-700 via-red-500 to-rose-500 -->
+    <div class="flex flex-row px-2" style="background-color:#ffff" data-astro-cid-mmggtga4="">
+    <div class="flex items-start w-1/2 float-start" data-astro-cid-mmggtga4="">
+    <a href="https://www.iitb.ac.in/" target="_blank">
+    <img src={iit.src} alt="iitb" decoding="async" data-astro-cid-mmggtga4=""
+    style="width: 150px;">
+    </a>
+    </div>
+    <div class="flex items-end justify-end float-right w-1/2" data-astro-cid-mmggtga4="">
+    <a href="https://fossee.in" target="_blank">
+    <img class=" float-right" src={fos.src} alt="fossee" decoding="async" data-astro-cid-mmggtga4="" 
+    style="width: 150px;">
+    </a>
+    </div>
+    </div>
+    <!-- <h2 class="text-white text-3xl font-bold mb-4 pt-6 pb-6 px-4 ml-6">
+      FOSSEE, IITBOMBAY <br><span class="text-2xl text-center font-bold ">Presents</span>
+    </h2>
+     -->
+     <div class="flex flex-col items-center text-center py-8 px-4 bg-[#7836b4ff] text-white">
+      <!-- Top Heading -->
+      <h2 class="text-3xl md:text-3xl font-bold mb-2">FOSSEE, &nbsp; IIT BOMBAY</h2>
+    
+      <!-- Subheading -->
+      <p class="text-xl md:text-2xl font-bold mb-3">Presents</p>
+    
+</div>
+              <div class="px-5 pt-5 flex flex-row align-items-center justify-center pb-2">
+        <img  src={logo.src} style="width:85%;" alt="ANIMATE 2025" decoding="async" />
+      </div>
+   
+       <div class="row-span-1 pt-4 flex items-center justify-center"><ul>
+        <li class="text-purple-600"><a href="/register" class="flex-1 border-indigo-600 items-center justify-center rounded-md overflow-hidden">
+    
+          <!-- <img class="duration-300" src={regi.src} alt="regi" decoding="async" /> -->
+          <!-- <img class="duration-300" src={regi.src} alt="regi" decoding="async" width="100" height="100" /> -->
+
+      <!-- REGISTER LINK -->
+<div class="flex justify-center">
+  
+<!-- <a href="/register"
+   class="text-white text-2xl font-bold px-6 py-2 border border-white rounded-md shadow-lg bg-purple-700 hover:bg-yellow-300 hover:text-purple-800 transition-all duration-300 hover:scale-105 hover:shadow-yellow-300">
+  Register
+</a> -->
+
+<!-- <a href="/register"
+   class="relative inline-block px-6 py-3 font-bold text-white border border-yellow-400 rounded-lg overflow-hidden transition duration-300 ease-in-out"
+   style="
+     background: rgba(255, 255, 255, 0.05);
+     box-shadow:
+       0 0 10px rgba(255, 255, 0, 0.8),
+       0 0 20px rgba(255, 255, 0, 0.5),
+       inset 0 0 5px rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(4px);
+     text-shadow: 0 0 8px rgba(255, 255, 0, 1);
+   "
+   onmouseover="this.style.boxShadow='0 0 20px rgba(255,255,0,1), 0 0 40px rgba(255,255,0,0.8), inset 0 0 10px rgba(255,255,0,0.4)'; this.style.textShadow='0 0 12px rgba(255,255,0,1)'"
+   onmouseout="this.style.boxShadow='0 0 10px rgba(255,255,0,0.8), 0 0 20px rgba(255,255,0,0.5), inset 0 0 5px rgba(255,255,255,0.1)'; this.style.textShadow='0 0 8px rgba(255,255,0,1)'"
+>
+  Register
+</a> -->
+<!-- <a href="/register"
+   class="relative inline-block px-6 py-3 font-bold text-white border border-yellow-400 rounded-lg overflow-hidden transition duration-300 ease-in-out"
+   style="
+     background: rgba(249, 201, 201, 0.05);
+     box-shadow:
+       0 0 10px rgba(247, 247, 84, 0.8),
+       0 0 20px rgba(243, 243, 233, 0.5),
+       inset 0 0 5px rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(4px);
+     text-shadow: 0 0 8px rgb(246, 246, 165);
+     color: white;
+   "
+   onmouseover="
+     this.style.boxShadow='0 0 20px rgba(0,255,0,1), 0 0 40px rgba(0,255,0,0.8), inset 0 0 10px rgba(0,255,0,0.4)';
+     this.style.textShadow='0 0 12px rgba(0,255,0,1)';
+     this.style.color='lime';
+     this.style.borderColor='lime';
+   "
+   onmouseout="
+     this.style.boxShadow='0 0 10px rgba(255,255,0,0.8), 0 0 20px rgba(255,255,0,0.5), inset 0 0 5px rgba(255,255,255,0.1)';
+     this.style.textShadow='0 0 8px rgba(255,255,0,1)';
+     this.style.color='white';
+     this.style.borderColor='rgba(255,255,0,0.7)';
+   "
+>
+  Register
+ </a> -->
+ <a href="/register"
+   class="relative inline-block px-6 py-3 font-bold text-white border border-yellow-400
+    rounded-lg overflow-hidden transition duration-300 ease-in-out mt-10"
+   style="
+     background: rgba(255, 255, 255, 0.05);
+     box-shadow:
+       0 0 10px rgba(255, 255, 0, 0.8),
+       0 0 20px rgba(255, 255, 0, 0.5),
+       inset 0 0 5px rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(4px);
+     text-shadow: 0 0 8px rgba(255, 255, 0, 1);
+     color: white;
+   "
+   onmouseover="
+     this.style.boxShadow='0 0 20px rgba(128,0,128,1), 0 0 40px rgba(128,0,128,0.8), inset 0 0 10px rgba(128,0,128,0.4)';
+     this.style.textShadow='0 0 12px rgba(186,85,211,1)';
+     this.style.color='violet';
+     this.style.borderColor='violet';
+   "
+   onmouseout="
+     this.style.boxShadow='0 0 10px rgba(255,255,0,0.8), 0 0 20px rgba(255,255,0,0.5), inset 0 0 5px rgba(255,255,255,0.1)';
+     this.style.textShadow='0 0 8px rgba(255,255,0,1)';
+     this.style.color='white';
+     this.style.borderColor='rgba(255,255,0,0.7)';
+   "
+>
+  Register
+</a>  
+
+ 
+          
+        </a></li>
+      </ul>
+     
+    </div> 
+        <div class="grid grid-rows-4 sm:grid-rows-4 pt-4">
+          <div class="row-span-1">
+            <div class="flex items-center justify-center flex-col gap-3 min-[500px]:flex-row">
+              <div class="dates items-center" style="color:#9e6320">
+                <!-- <p class="important-date flex items-center justify-center text-2xl md:text-left lg:text-2xl"><strong> - Registrations are in Progress -</strong></p> --> 
+                <!-- <p class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl text-center"><strong> - Registrations are closed -</strong></p>
+                <p class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl text-center"><strong> - Last date of submission -</strong></p>
+                <p class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl"> 23 June 2025</p>                 -->
+                <!-- <p class="important-date flex items-center justify-center text-2xl md:text-left lg:text-2xl"><strong> - Last date of submission -</strong></p> -->
+                <!-- <p class="important-date flex items-center justify-center text-2xl md:text-left lg:text-2xl"> 15 May 2025</p> -->
+                
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+          
+      
+   
+
+    <main class="lg:pl-[25rem] ">
+     
+      <!-- <div class="mx-auto px-0 sm:px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem]">   -->
+        <div class="flex items-end justify-end">  
+         
+<nav class="float-end mb-3 pb-2">
+  <div class="mx-auto px-4 lg:px-16 pt-4 max-w-none xl:ml-0 xl:mr-[0rem] ">
+      <button class='inline-flex items-center justify-center md:hidden' data-collapse-toggle="main-navigation" type="button" aria-controls="main-navigation" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full items-end md:block menu-item" id="main-navigation">
+      <ul class="menu items-end justify-end bebas-neue-regular">
+        {
+          navLinks.map((link) => {
+            const { label, href } = link;
+
+            return (
+              <li>
+                <a class="nav-link text-purple-600 hover:text-purple-600 transition duration-300" href={href}>{label}</a>
+              </li>
+            );
+          })
+        }
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</div>
+      
+  <!-- </div> -->
+
+    <div class="mx-auto px-4 lg:px-16 max-w-none xl:ml-0 xl:mr-[0rem]"
+    transition:animate={slide({ duration: '0.4s' })}>
+        <slot />
+      </div>
+    </main>
+  </div>
+</div>
+<style>
+  nav,
+  ul {
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: larger;
+
+  }
+
+  ul.menu li {
+    display: inline-block;
+    border-right: 2px solid rgb(115, 31, 249);
+    border-style: inset;
+    list-style: none;
+    padding: 0px 8px;
+  }
+
+  @media only screen and (max-width: 600px;) {
+    nav,
+  ul {
+    display:block;
+  }
+
+  ul.menu li {
+    display:block;
+  }
+  }
+  ul.menu li a{
+  text-decoration: none;
+  color:#6c5353;
+}
+ul.menu li:hover{
+color: #7836b4ff;
+/* background-color: purple; */
+  }
+ul.menu li a:hover{
+  color:#7836b4ff;
+}
+.menu-item a.active{
+  color:#7836b4ff!important;
+  /* background-color: blue; */
+}
+ul.menu li:last-child{  
+  border-right: none;
+}
+/* ul.menu li:hover, */
+/* a.active {color: aqua;} */
+ul.menu li a.active{
+  color:#7836b4ff;
+}
+</style>
+
+<script>
+ 
+ document.addEventListener('astro:page-load', () => {
+if(window.location.hash){
+var currentUrl = window.location.pathname.replace(/\/+$/, '') + window.location.hash.replace(/\/+$/, '');
+}
+else{
+
+  var currentUrl = window.location.pathname.replace(/\/+$/, '');
+}
+
+
+  var menuItems = document.querySelectorAll('.nav-link');
+
+console.log(currentUrl);
+  menuItems.forEach(function(item) {
+   
+    var menuItemUrl = item.getAttribute('href');
+console.log(menuItemUrl);
+    // Check if the current URL matches the menu item's href
+    if (currentUrl === menuItemUrl) {
+      // Add the 'active' class to the matching menu item
+      item.classList.add('active');
+    } else {
+      // Remove the 'active' class from other menu items
+      item.classList.remove('active');
+    }
+  });
+
+ });
+
+
+
+</script>
