@@ -1,6 +1,6 @@
 ---
 import Main from '../layouts/main.astro';
-import Hero from '../images/home-img.png';
+import Hero from '../images/home-img-updated.png';
 import logo from '../images/animate-25-logo(1).png';
 import Syngif from '../images/homebnr-note(1).png';
 import fos from '../images/fossee-logo.png';
@@ -43,6 +43,38 @@ import iit from '../images/IITB-logo.png';
             
           <!-- </a></li> -->
         <!-- </ul></div> -->
+        
+        <div class="flex justify-center">
+          <a href="/register"
+            class="relative inline-block px-6 py-3 font-bold text-white border border-yellow-400
+              rounded-lg overflow-hidden transition duration-300 ease-in-out mt-6  mb-10"
+            style="
+              background: rgba(255, 255, 255, 0.05);
+              box-shadow:
+                0 0 10px rgba(255, 255, 0, 0.8),
+                0 0 20px rgba(255, 255, 0, 0.5),
+                inset 0 0 5px rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(4px);
+              text-shadow: 0 0 8px rgba(255, 255, 0, 1);
+              color: white;
+            "
+            onmouseover="
+              this.style.boxShadow='0 0 20px rgba(128,0,128,1), 0 0 40px rgba(128,0,128,0.8), inset 0 0 10px rgba(128,0,128,0.4)';
+              this.style.textShadow='0 0 12px rgba(186,85,211,1)';
+              this.style.color='violet';
+              this.style.borderColor='violet';
+            "
+            onmouseout="
+              this.style.boxShadow='0 0 10px rgba(255,255,0,0.8), 0 0 20px rgba(255,255,0,0.5), inset 0 0 5px rgba(255,255,255,0.1)';
+              this.style.textShadow='0 0 8px rgba(255,255,0,1)';
+              this.style.color='white';
+              this.style.borderColor='rgba(255,255,0,0.7)';
+            "
+          >
+            Register
+          </a>
+        </div>
+        
         <div class="row-span-1 bg-red-500"> <div class="dates items-center" style="color:#e7dacb"> 
           <!-- <p class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl text-center"><strong> - Registrations are closed -</strong></p>
                 <p class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl text-center"><strong> - Last date of submission -</strong></p>
