@@ -1,83 +1,93 @@
 ---
 import Main from '../layouts/main.astro';
+
+import marvels from '../images/mechanical marvels.jpg';
+import creature from '../images/mythical creature.jpg';
+import nature from '../images/natures symphony.jpg';
+import celebration from '../images/cultural celebration.jpg';
+import cityspace from '../images/futuristic cityspace.jpg';
+import hero from '../images/journey of heroes.jpg';
+
+const blenderThemes = [
+  {
+    title: "FUTURISTIC CITYSPACE",
+    desc: "Design a futuristic city with intricate details and animations like flying vehicles or dynamic lighting.",
+    img: cityspace
+  },
+  {
+    title: "MYTHICAL CREATURES",
+    desc: "Animate a mythical creature in its habitat, showcasing movement and personality.",
+    img: creature
+  },
+  {
+    title: "MECHANICAL MARVELS",
+    desc: "Create and animate a mechanical gadget or robot performing a task.",
+    img: marvels
+  }
+];
+
+const synfigThemes = [
+  {
+    title: "JOURNEY OF A HERO",
+    desc: "Narrate a life journey of your favorite character journey using 2D characters and dynamic storytelling techniques.",
+    img: hero
+  },
+  {
+    title: "CULTURAL CELEBRATIONS",
+    desc: "Depict a traditional celebration or festival with animated sequences.",
+    img: celebration
+  },
+  {
+    title: "NATURE'S SYMPHONY",
+    desc: "Use 2D elements to showcase the harmony of natural ecosystems.",
+    img: nature
+  }
+];
 ---
 
-
 <Main>
-    <section>
+  <section class="px-6 py-10 font-sans">
+    <h1 class="section-title text-4xl pb-3 text-center">Themes for ANIMATE 2025</h1>
 
-        <div class="py-3">
-            <!-- 1/4 Width Column -->
-            <!-- <div class="col-span-1 bg-gray-300 p-4">
-                <img src=""/>
-                <h1 class="section-title">Celebrating India's Innovation</h1>
-                
-                
-            </div> -->
-            <!-- 3/4 Width Column -->
-            <div class="col-span-1 p-4">
-                
-                <h1 class="section-title text-4xl pb-3 text-center">Themes for ANIMATE 2025
+    <!-- Blender 3D Themes -->
+    <div class="mb-16">
+      <h2 class="justify-end text-4xl mb-4">Blender 3D Themes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {
+          blenderThemes.map(theme => (
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg transition-transform hover:-translate-y-1">
+                  {/* <img src={theme.img} alt={theme.title} class="w-full h-48 object-cover" /> */}
+                  <img src={theme.img.src} alt={theme.title} class="w-full h-72 object-cover" />
 
-                    
-                    
-                </h1>
-                
-           <!-- Blender 3D Themes -->
-<div class="mb-10">
-  <h2 class="justify-end text-4xl mb-4">Blender 3D Themes</h2>
-  <ul class="list-disc pl-6 space-y-4 text-lg">
-    <li>
-      <strong>The Future Cityscape:</strong>
-      Envision cities of tomorrow – flying vehicles, vertical gardens, AI-powered infrastructure – bring your version of the future to life in stunning 3D.
-    </li>
-    <li>
-      <strong>Mythical Creatures:</strong>
-      Dive into folklore and fantasy. Design and animate dragons, phoenixes, mermaids, or creatures of your own imagination.
-    </li>
-    <li>
-      <strong>Mechanical Marvels:</strong>
-      Robots, steampunk machines, or futuristic gadgets – showcase mechanical brilliance with intricate design.
-    </li>
-  </ul>
-</div>
 
-<!-- Synfig Studio 2D Themes -->
-<div>
-  <h2 class="justify-end text-4xl mb-4">Synfig Studio 2D Themes</h2>
-  <ul class="list-disc pl-6 space-y-4 text-lg">
-    <li>
-      <strong>Journey of a Hero:</strong>
-      Craft a short narrative of a hero's path: challenges, growth, and triumph. Any genre, any setting, your hero, your rules.
-    </li>
-    <li>
-      <strong>Cultural Celebration:</strong>
-      Highlight traditional festivals, folk dances, local attire, or rituals from around the world. Celebrate culture through vibrant visuals.
-    </li>
-    <li>
-      <strong>Nature’s Symphony:</strong>
-      Animate the beauty, power, and serenity of nature: flowing rivers, whispering forests, singing birds, or majestic mountains.
-    </li>
-  </ul>
-</div>
-
-    </section>
-  </Main>
-  
+              <div class="p-4">
+                <h3 class="text-xl font-bold text-purple-700 uppercase mb-2">{theme.title}</h3>
+                <p class="text-gray-700 text-sm">{theme.desc}</p>
+              </div>
+            </div>
+          ))
+        }
       </div>
-       
-       
-        </section>
-        <style>
-            tr,td{
-                border: 1px solid black;
-                padding: 10px;
-            }
-            @media  (min-width: 600px;) {
-                tr,td{
-                    
-                    padding: auto;
-                }
-            }
-        </style>
+    </div>
+
+    <!-- Synfig Studio 2D Themes -->
+    <div>
+      <h2 class="justify-end text-4xl mb-4">Synfig Studio 2D Themes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {
+          synfigThemes.map(theme => (
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg transition-transform hover:-translate-y-1">
+              {/* <img src={theme.img} alt={theme.title} class="w-full h-48 object-cover" /> */}
+              <img src={theme.img.src} alt={theme.title} class="w-full h-72 object-cover" />
+
+              <div class="p-4">
+                <h3 class="text-xl font-bold text-purple-700 uppercase mb-2">{theme.title}</h3>
+                <p class="text-gray-700 text-sm">{theme.desc}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
 </Main>
