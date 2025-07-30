@@ -3,7 +3,8 @@ import Main from '../layouts/main.astro';
 
 const workshop = {
   topic: "Workshop on Submission Preparation & Synfig Studio Demo",
-  time: "30 July 2025, 3-4 PM",
+  date:"30 July,2025",
+  time: " 3.00-4.00 PM",
   zoom: {
     url: "https://zoom.us/j/96921483124?pwd=tsJ8FcCF9WPfTaeDfxKTMs00FJomp4.1",
     meetingId: "969 2148 3124",
@@ -20,6 +21,7 @@ const workshop = {
     <h1 class="mb-6 border-[#1f2937] pb-2">
       {workshop.topic}
     </h1>
+    <p class="mb-4"><strong>Date:</strong> {workshop.date}</p>
 
     <p class="mb-4"><strong>Time:</strong> {workshop.time}</p>
 
@@ -32,7 +34,7 @@ const workshop = {
     <p><strong>Meeting ID:</strong> {workshop.zoom.meetingId}</p>
     <p><strong>Passcode:</strong> {workshop.zoom.passcode}</p>
 
-    <h2 class="mt-6 mb-1 font-bold">YouTube Live Streaming</h2>
+    <h2 class="mt-6 mb-1 font-Semibold">YouTube Live Streaming</h2>
     <p>
       <a href={workshop.youtube.url} class="text-purple-600 underline" target="_blank" rel="noopener noreferrer">
         Watch on YouTube Live
