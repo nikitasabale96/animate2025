@@ -9,6 +9,10 @@ const workshops = [
     date: "07 August, 2025",
     time: "3:00 – 4:00 PM",
     image: blenderimage.src,
+    video: {
+      url: "https://www.youtube.com/embed/Iwlf7P6tboo",
+      type: "youtube"
+    }
   },
   {
     topic: "Workshop on Submission Preparation & Synfig Studio Demo",
@@ -19,6 +23,8 @@ const workshops = [
     },
     image: workshopimage.src,
   },
+  
+
  
 ];
 ---
@@ -80,6 +86,7 @@ const workshops = [
         <!-- Divider -->
         {/* <hr class="w-full max-w-md mt-6 border-gray-400" /> */}
       </div>
+      
     ))}
   </div>
 </Main>
