@@ -100,7 +100,7 @@ import iit from '../images/IITB-logo.png';
             </div>
             </div>
           </div>
-          <div class="w-full flex flex-col justify-center items-center py-4">
+          <!-- <div class="w-full flex flex-col justify-center items-center py-4">
             <p class="text-xl md:text-2xl font-bold mb-3 animate-pulse text-white">
               Registrations Closed
             </p>
@@ -111,7 +111,7 @@ import iit from '../images/IITB-logo.png';
                 15th August 2025
               </span>
             </p>
-          </div>
+          </div> -->
             
         </div>
           
@@ -139,7 +139,19 @@ import iit from '../images/IITB-logo.png';
 
             return (
               <li>
-                <a class="nav-link text-purple-600 hover:text-purple-600 transition duration-300" href={href}>{label}</a>
+                {/* </li>a class="nav-link text-purple-600 hover:text-purple-600 transition duration-300" href={href}>{label}</a> */}
+             
+<a
+  class={`nav-link text-purple-600 hover:text-purple-600 transition duration-300 ${
+    label === "Awards" || label === "Results" ? "award-result" : ""
+  }`}
+  href={href}
+>
+  {label}
+</a>
+
+ 
+
               </li>
             );
           })
@@ -210,6 +222,31 @@ ul.menu li:last-child{
 ul.menu li a.active{
   color:#7836b4ff;
 }
+./* Highlight Award & Result without affecting layout */
+/* Highlight Award & Result without affecting layout */
+ul.menu li a.award-result {
+  color: red !important;
+  font-weight: bold !important;
+}
+
+ul.menu li a.award-result:hover {
+  color: red !important;
+}
+
+
+/* Minimal override — only changes color for Award & Result, no layout changes */
+/* Highlight Awards & Results Only */
+.nav-link.award-result {
+  color: red !important;
+  font-weight: 600 !important;
+}
+
+.nav-link.award-result:hover,
+.nav-link.award-result.active {
+  color: red !important;
+}
+
+
 </style>
 
 <script>
